@@ -1,0 +1,826 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none
+}
+
+#Cuerpo{
+    box-sizing: border-box;   
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+    background-color: #fff;
+}
+
+.Contenido{
+    flex: 1;
+    z-index: 0;/*-3*/
+    
+    background-color: #60b92f;
+}
+
+/*===== Botón de menú =====
+#CirculoMenu{
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #fff;
+}
+
+#CirculoMenu:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+
+#Hamburguesa{
+    background-color: none;
+    width: 34px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.LineaUno, .LineaDos, .LineaTres{
+    width: 100%;
+    background-color: #00ce00;
+    height: 5px;
+    margin-top: 4px;
+    border-radius: 10px;
+    transition: all 0.14s;
+}
+
+.Salir .LineaUno{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.Salir .LineaDos{
+    opacity: 0;
+}
+
+.Salir .LineaTres{
+    transform: rotate(-45deg) translate(8px, -7px);
+}
+===== Botón de menú =====*/
+
+
+
+/*===== Menú lateral =====
+#MenuLateral{
+    position: fixed;
+    right: -100%;
+    height: 100vh;
+    width: 30%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #fff;
+    font-size: 2em;
+    
+    background-color: #222; #00ce00;
+    transition: all 0.14s;
+}
+
+.Mostrar{
+    right: 0%;
+}
+
+#ListaDeMenuLateral{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li:hover{
+    background: rgba(255,255,255,0.4);
+}
+===== Menú lateral =====*/
+
+
+
+/*===== Redes sociales en header =====*/
+#FondoHeader{
+    width: 100%;
+    background-color: #00c2c1;
+}
+
+.CuadroRedesSociales,.CuadroRSS,.ItemsCuadroRSS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CuadroRedesSociales{
+    margin-left: 60px;
+    width: 380px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px 16px 0px #999999;
+    transition: all 0.2s;
+}
+
+.CuadroRSS{
+    width: 50%;
+    padding: 4px 4px 4px 4px;
+}
+
+.CuadroRSS:hover{
+    opacity: 0.5;
+}
+
+.CuadroRSS a{
+    color: #fff;
+}
+
+.CuadroRSS a:hover{
+    color: #ff0;
+}
+
+.Whats{
+    border-radius: 0 0 0 10px;
+    background-color: #00b600;
+}
+
+.Face{
+    border-radius: 0 0 10px 0;
+    background-color: #0065ab;
+}
+
+.TamanoImgRSS{
+    width: 34px;
+    height: auto;
+    padding-right: 6px;
+}
+
+/*===== Redes sociales en header =====*/
+
+
+
+/*===== Contenido =====*/
+#FondoAzul{
+    position: absolute;
+    height: 300px;
+    /*max-height: 320px;*/
+    width: 100%;
+    z-index: -2;/*-2*/
+    
+    background-color: #00c2c1;
+}
+
+#Sol{
+    position: absolute;
+    top: 58px;
+    right: 6%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: -1;/*-1*/
+}
+
+/* Nubes */
+
+.CuadroDeNube,
+#CuadroNube1,
+#CuadroNube2,
+#CuadroNube3,
+#CuadroNube4,
+#CuadroNube5{
+    width: 180px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;/*-1*/
+}
+
+#CuadroNube1 {
+    top: 46px;
+    left: -180px;
+    animation-name: Nubes1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes Nubes1 {
+    to {
+        left: 100%
+    }
+}
+
+#CuadroNube2 {
+    top: 112px;
+    left: -180px;
+    animation-name: Nubes2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6s
+}
+
+@keyframes Nubes2 {
+    to {
+        left: 100%
+    }
+}
+
+#CuadroNube3 {
+    top: 152px;
+    left: -180px;
+    animation-name: Nubes3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s
+}
+
+@keyframes Nubes3 {
+    to {
+        left: 100%
+    }
+}
+
+#CuadroNube4 {
+    top: 69px;
+    left: -180px;
+    animation-name: Nubes4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 10s
+}
+
+@keyframes Nubes4 {
+    to {
+        left: 100%
+    }
+}
+
+#CuadroNube5 {
+    top: 180px;
+    left: -180px;
+    animation-name: Nubes5;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 12s
+}
+
+@keyframes Nubes5 {
+    to {
+        left: 100%
+    }
+}
+
+.ConfDeCirculos,
+.Cir1,
+.Cir2,
+.Cir3,
+.Cir4,
+.Cir5 {
+    position: relative;
+    border-radius: 50%;
+    background-color: #fff
+}
+
+.Cir1 {
+    top: 76%;
+    left: 1%;
+    width: 28px;
+    height: 28px
+}
+
+.Cir2 {
+    top: -65%;
+    left: 74%;
+    width: 48px;
+    height: 48px
+}
+
+.Cir3 {
+    top: -20%;
+    left: 74%;
+    width: 48px;
+    height: 48px
+}
+
+.Cir4 {
+    top: 28%;
+    left: 46%;
+    width: 58px;
+    height: 58px
+}
+
+.Cir5 {
+    top: 20%;
+    left: 70%;
+    width: 38px;
+    height: 28px
+}
+
+.RectanguloNube {
+    position: relative;
+    top: 0%;
+    left: -200%;
+    width: 60px;
+    height: 20px;
+    background-color: white
+}
+
+/* Nubes */
+
+
+/*----- Casa -----*/
+
+#CuadroCasaYMenus {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 16%;
+    z-index: 0;
+}
+
+#CuadroCasaYHuesos {
+    display: block;
+    width: 540px;
+    height: auto;
+}
+
+#TamanoImgCasa {
+    width: 450px;
+    height: auto;
+    z-index: 0;
+}
+
+.TamanoYPosicionDeHuesosComunes,
+#TamanoImgHuesoIzquierda,
+#TamanoImgHuesoDerecha {
+    position: relative;
+    width: 160px;
+    height: auto;
+}
+
+.BaseDeMovimientoDeHueso,
+#TamanoImgHuesoIzquierda:hover,
+#TamanoImgHuesoDerecha:hover {
+    animation-name: MovimientoDeHueso;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: infinite;
+    animation-delay: 0s;
+}
+
+#TamanoImgHuesoIzquierda {
+    top: -48px;
+    left: 40%;
+}
+
+@keyframes MovimientoDeHueso {
+    0% {
+        transform: rotate(-14deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(14deg)
+    }
+}
+
+#TamanoImgHuesoDerecha {
+    top: -30px;
+    left: 40%;
+}
+
+@keyframes MovimientoDeHueso {
+    0% {
+        transform: rotate(14deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(-14deg)
+    }
+}
+
+/*----- Casa -----*/
+
+
+
+/*----- Menús en letrero -----*/
+
+#CuadroDeMenus {
+    position: fixed;
+    right: 100px;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#CuadroDeMenus ul {
+    list-style: none;
+    margin-bottom: -250px;
+}
+
+#CuadroDeMenus ul li {
+    margin-top: 50px;
+}
+
+#CuadroDeMenus ul li a {
+    text-decoration: none;
+}
+
+#CuadroDeMenus ul li a:hover{
+    color: #ff0;
+}
+
+#CuadroDeMenus ul li a .BotonDeMenu {
+    background-color: #a0724b;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+#CuadroDeMenus ul li a .BotonDeMenu:hover {
+    color: #ff0;
+}
+
+#Menus {
+    height: auto;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#PaloDeLetrero {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;/*-1*/
+    height: 360px;
+    width: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color: #a0724b;
+}
+
+/*----- Menús en letrero -----*/
+
+/*===== Contenido =====*/
+
+
+
+/*===== Fin de footer =====*/
+#PieDePagina{
+    align-self: flex-end;
+    align-items: center;
+    background-color: #60b92f;
+    box-shadow: 0 0 8px #4D9726;
+    color: #fff;
+    display: flex;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    z-index: 1;
+}
+
+#PieDePagina #Corazon{
+    color: red;
+}
+
+#PieDePagina a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#PieDePagina a:hover{
+    color: #ff0;
+}
+/*===== Fin de footer =====*/
+
+
+
+@media only screen and (max-width:1366px){
+    #CuadroDeMenus {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+
+        margin-top: -24px;
+        margin-bottom: 30px;
+    }
+
+    #CuadroDeMenus ul {
+        margin-bottom: 0px;
+    }
+
+    #CuadroDeMenus ul li {
+        margin-top: 50px;
+    }
+
+    #CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 1.4em;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #Menus {
+        height: 240px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #PaloDeLetrero {
+        display: none;
+        visibility: hidden;
+    }
+    
+    #CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 1.2em;
+    }
+}
+
+/*@media only screen and (max-width:992px){}*/
+
+@media only screen and (max-width:720px){
+    .CuadroRedesSociales {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s;
+    }
+    
+    #FondoAzul {
+        height: 270px;
+    }
+    
+    #Sol {
+        width: 120px;
+        height: 120px;
+    }
+    
+    #CuadroCasaYMenus {
+        margin-left: 0px;
+        padding-top: 54px;
+    }
+    
+    #CuadroCasaYHuesos {
+        width: 400px;
+    }
+    
+    #TamanoImgHuesoIzquierda,
+    #TamanoImgHuesoDerecha {
+        position: relative;
+        width: 120px;
+        height: auto;
+    }
+    
+    #TamanoImgHuesoIzquierda {
+        top: -40px;
+        left: 60%;
+    }
+    
+    #TamanoImgHuesoDerecha {
+        top: -30px;
+        left: 66%;
+    }
+    
+    /* Este es el que estaba
+    #CuadroDeMenus {
+        right: 20px;
+    }
+    
+    #CuadroDeMenus ul {
+        margin-bottom: -220px;
+    }
+    
+    #CuadroDeMenus ul li {
+        margin-top: 40px;
+    }
+    
+    #CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 1.1em;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #PaloDeLetrero {
+        height: 320px;
+        width: 40px;
+    }
+    */
+    
+    /*#CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 1.2em;
+    }*/
+}
+
+@media only screen and (max-width:480px){
+    .CuadroRedesSociales {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .Whats {
+        border-radius: 0;
+    }
+    
+    .Face {
+        border-radius: 0;
+    }
+    
+    #Sol {
+        width: 94px;
+        height: 94px
+    }
+    
+    #CuadroCasaYMenus {
+        justify-content: center;
+        padding-top: 104px;
+    }
+    
+    #CuadroCasaYHuesos {
+        width: 340px;/*340px*/
+    }
+    
+    #TamanoImgCasa {
+        width: 90%;
+        height: auto;
+    }
+    
+    #TamanoImgHuesoIzquierda,#TamanoImgHuesoDerecha {
+        position: relative;
+        width: 80px;
+        height: auto;
+    }
+    
+    #TamanoImgHuesoIzquierda {
+        top: -20px;
+        left: 48%;
+    }
+    
+    #TamanoImgHuesoDerecha {
+        top: -10px;
+        left: 48%;
+    }
+    
+    /* Este era el que estaba
+    #CuadroDeMenus {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+       
+        margin-top: -24px;
+        margin-bottom: 30px;
+    }
+    
+    #CuadroDeMenus ul {
+        margin-bottom: 0px;
+    }
+    
+    #CuadroDeMenus ul li {
+        margin-top: 50px;
+    }
+    
+    #CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 1.1em;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #Menus {
+        height: 220px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #PaloDeLetrero {
+        display: none;
+        visibility: hidden;
+    }
+    */
+    
+    #CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:320px){
+    #Facebook {
+        display: none;
+        visibility: hidden;
+    }
+    
+    #Telefono {
+        display: none;
+        visibility: hidden;
+    }
+    
+    #FondoAzul {
+        height: 230px;
+    }
+    
+    #Sol {
+        width: 74px;
+        height: 74px;
+    }
+    
+    #CuadroCasaYMenus {
+        padding-top: 124px;
+    }
+    
+    #CuadroCasaYHuesos {
+        width: 100%;
+    }
+    
+    #TamanoImgCasa {
+        width: 90%;
+        height: auto;
+    }
+    
+    #TamanoImgHuesoIzquierda,
+    #TamanoImgHuesoDerecha {
+        position: relative;
+        width: 70px;
+        height: auto;
+    }
+    
+    #TamanoImgHuesoIzquierda {
+        top: -22px;
+        left: 46%;
+    }
+    
+    #TamanoImgHuesoDerecha {
+        top: -14px;
+        left: 46%;
+    }
+    
+    /*
+    #CuadroDeMenus {
+        margin-top: -24px;
+        margin-bottom: 30px;
+    }
+    */
+    
+    #CuadroDeMenus ul li {
+        margin-top: 46px;
+    }
+    
+    #CuadroDeMenus ul li a .BotonDeMenu {
+        font-size: 0.9em;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
