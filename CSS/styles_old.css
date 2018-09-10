@@ -543,6 +543,31 @@ li:hover{
 
 
 
+
+
+
+#Centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:1366px){
     #CuadroDeMenus {
         display: block;
