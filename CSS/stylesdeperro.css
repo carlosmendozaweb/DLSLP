@@ -1,4 +1,4 @@
-#CuadroDeInfoDePerro{
+﻿#CuadroDeInfoDePerro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     margin-bottom: 20px;
 }
 
-#Slider{
+/*#Slider{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@
     background-image: url(../Imagenes/Max-Grande.jpg);
     background-size: cover;
     background-position: center center;
-}
+}*/
 
 #InfoDePerro{
     width: 40%;
